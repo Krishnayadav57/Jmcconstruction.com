@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J. M. C. Construction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      background-color: #111827;
+      color: #f3f4f6;
+      font-family: 'Inter', sans-serif;
+    }
+    .service-card {
+      background-color: #1f2937;
+      border-radius: 0.75rem;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-0.5rem);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    }
+    input, textarea {
+      background-color: #111827 !important;
+    }
+  </style>
+</head>
+<body class="font-inter">
+  <header class="bg-gray-900 py-4 shadow-md">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <h1 class="text-2xl font-semibold">J. M. C. Construction And Engineering Pvt. Ltd.</h1>
+      <p class="text-lg text-gray-300">औरहि-०४ (सिरहा)</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto py-8 px-4">
+    <section class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+      <p class="text-gray-400 text-lg">We offer a wide range of construction and engineering services:</p>
+    </section>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">जमीन नाप्ने (Land Surveying)</h3><p>Precise land measurement and surveying services.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">नक्सा बनाउने (Map Making)</h3><p>Professional map creation and design services.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">नक्साको काम गर्ने (Map Related Works)</h3><p>All kinds of map-related services and solutions.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">घर बनाउने (House Construction)</h3><p>Building and construction of residential houses.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">सरकारी तथा अर्धसरकारी कामहरुको ठेक्का वा जिम्मा लिई गर्ने गराउने (Government and Semi-Government Contracts)</h3><p>Taking contracts and responsibilities for government and semi-government projects.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">घरको डिजाईन गर्ने (House Designing)</h3><p>Custom house design services.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">लेवर तथा मेटेरियल सहित कामको जिम्मा पनि लिइन्छ (Labor and Material Contracting)</h3><p>We also undertake projects with labor and material responsibilities.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">तल्ला थप्ने (Floor Addition)</h3><p>Services for adding additional floors to existing structures.</p></div>
+      <div class="service-card"><h3 class="text-xl font-semibold mb-2">3D तथा 2D नक्सा बनाउने (3D and 2D Map Creation)</h3><p>Creating 3D and 2D maps.</p></div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold text-center mb-6">Project Section</h2>
+      <div class="bg-gray-800 p-6 rounded-lg text-center">
+        <p>This section will show ongoing and completed projects. (To be managed dynamically when backend is available.)</p>
+      </div>
+    </section>
+
+    <section class="bg-gray-700 py-8 rounded-lg mb-12 shadow-inner">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-4">Founder & CEO</h2>
+        <p class="text-xl font-semibold">देवेन्द्र यादव (Devendra Yadav)</p>
+        <p>9813019707, 9845098280</p>
+      </div>
+    </section>
+
+    <section class="bg-gray-800 p-6 rounded-lg mb-12 shadow-inner">
+      <h2 class="text-2xl font-bold text-center mb-6">Contact Us</h2>
+      <form class="max-w-xl mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" required class="w-full p-3 rounded border border-gray-600 text-white" />
+        <input type="email" placeholder="Your Email" required class="w-full p-3 rounded border border-gray-600 text-white" />
+        <textarea placeholder="Your Message" required class="w-full p-3 rounded border border-gray-600 text-white"></textarea>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>© 2024 J. M. C. Construction. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp & Call Buttons -->
+  <a href="https://wa.me/9779813019707" class="fixed bottom-20 right-4 bg-green-500 p-3 rounded-full shadow-lg" title="Chat on WhatsApp" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" class="h-6 w-6">
+      <path d="M16.002 2.002C8.28 2.002 2 8.284 2 16.002a13.89 13.89 0 001.924 7.045L2 30l7.133-1.872a13.92 13.92 0 006.869 1.774h.002c7.722 0 14.002-6.282 14.002-14.002s-6.28-14.002-14.002-14.002zm0 25.454a11.49 11.49 0 01-5.84-1.578l-.418-.248-4.226 1.11 1.125-4.116-.27-.426A11.453 11.453 0 014.55 16.002c0-6.338 5.153-11.492 11.452-11.492 6.3 0 11.452 5.154 11.452 11.492s-5.152 11.454-11.452 11.454zm6.342-8.592c-.348-.174-2.06-1.02-2.38-1.14-.32-.12-.552-.174-.783.174-.232.348-.9 1.14-1.106 1.376-.206.232-.414.26-.762.086-.348-.174-1.47-.54-2.798-1.72-1.034-.924-1.732-2.066-1.936-2.414-.2-.348-.022-.536.152-.71.156-.156.348-.406.52-.61.174-.206.232-.348.348-.58.116-.232.058-.434-.028-.61-.086-.174-.782-1.886-1.072-2.582-.282-.68-.568-.59-.782-.6l-.666-.012c-.232 0-.61.088-.93.434-.32.348-1.22 1.192-1.22 2.906 0 1.714 1.252 3.372 1.428 3.604.174.232 2.462 3.76 5.96 5.268.834.36 1.484.574 1.99.734.836.266 1.596.228 2.198.138.67-.1 2.06-.84 2.352-1.652.288-.812.288-1.51.2-1.652-.088-.144-.32-.232-.666-.406z"/>
+    </svg>
+  </a>
+
+  <a href="tel:+9779813019707" class="fixed bottom-4 right-4 bg-blue-500 p-3 rounded-full shadow-lg" title="Call Now">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="white" viewBox="0 0 24 24" class="h-6 w-6">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h2l3 5-4 4c1.5 2.5 4 5 6.5 6.5l4-4 5 3v2a2 2 0 01-2 2h-1C9.5 20 4 14.5 4 8V7a2 2 0 012-2z"/>
+    </svg>
+  </a>
+</body>
+</html>
